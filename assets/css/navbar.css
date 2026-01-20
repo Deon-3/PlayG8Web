@@ -1,0 +1,26 @@
+/* ================================
+   Custom navbar color
+   ================================ */
+
+.custom-navbar {
+  background-color: #033aa8; /* YOUR custom color */
+}
+
+/* Brand */
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #0d6efd;
+}
+
+/* Links */
+.custom-navbar .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.custom-navbar .navbar-nav .nav-link:hover,
+.custom-navbar .navbar-nav .nav-link.active {
+  color: #0d6efd;
+}
