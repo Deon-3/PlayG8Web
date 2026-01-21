@@ -4,7 +4,15 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  padding-top: 56px; /* Space for fixed navbar */
+  padding-bottom: 46px; /* Space for fixed footer */
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
   line-height: 1.5;
   color: #111;
 }
@@ -19,7 +27,7 @@ body {
 }
 
 /* ================================
-   Hero layout
+   Home Page Hero Section
    ================================ */
 
 .hero {
@@ -27,9 +35,9 @@ body {
 }
 
 .hero_inner {
-    background-color: #2DA0ED30;
-    padding: 1.5rem;
-    border-radius: 10px;
+  background-color: #2da0ed30; /* Light blue with transparency */
+  padding: 1.5rem;
+  border-radius: 10px;
   max-width: 1100px;
   margin: 0 auto;
 
@@ -77,4 +85,45 @@ body {
   height: auto;
   display: block;
   margin-left: auto; /* Align image to the right */
+}
+
+/* ================================
+   Home Page How It Works Section
+   ================================ */
+
+.card-body {
+  background-color: #2da0ed30; /* Light blue with transparency */
+  border-radius: 10px;
+}
+
+/* ================================
+   Home Page Benefits Section
+   ================================ */
+
+.benefits {
+  background: #ffffff;
+}
+
+.benefit-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3, 58, 168, 0.08);
+  font-size: 20px;
+}
+
+/* ================================
+   Home Page Final CTA Section
+   ================================ */
+
+.finalCta {
+  background: #ffffff;
+}
+
+.finalCta__box {
+  background: #033aa8; /* brand blue */
+  color: #ffffff;
 }
