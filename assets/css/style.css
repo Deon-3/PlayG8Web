@@ -1,3 +1,80 @@
+/* ================================
+   Global
+   ================================ */
+
 body {
-  padding-bottom: 56px; /* footer height */
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color: #111;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+/* ================================
+   Hero layout
+   ================================ */
+
+.hero {
+  padding: 3rem 1rem;
+}
+
+.hero_inner {
+    background-color: #2DA0ED30;
+    padding: 1.5rem;
+    border-radius: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero_content h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.hero_content p {
+  margin: 0 0 1rem;
+  max-width: 60ch;
+}
+
+.hero_actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+/* Desktop: two columns, image on the right */
+@media (min-width: 992px) {
+  .hero_inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero_media {
+    order: 2;
+    text-align: right;
+  }
+
+  .hero_content {
+    order: 1;
+  }
+}
+
+.hero_media img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto; /* Align image to the right */
 }
